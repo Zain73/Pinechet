@@ -1,0 +1,35 @@
+footer {
+    width:100%;
+    margin:80px 0 40px 0;
+
+    > img {
+        display:none;
+    }
+
+    .information-container {
+        display:flex;
+        flex-direction: column;
+    
+        address {
+    
+            > * {
+                font-style:normal;
+                margin-left:32px;
+            }
+    
+            p {
+                margin-top:20px;
+            }
+    
+        }
+    
+        .social-icons {
+            margin:30px 0 0 32px;
+            width: 150px;
+            display:flex;
+            justify-content: space-between;
+
+        }
+    }
+
+}

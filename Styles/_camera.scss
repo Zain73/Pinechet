@@ -1,0 +1,43 @@
+#camera {
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    flex-direction:column;
+    margin-top:80px;
+
+    .image-container {
+        order:2;
+        position: relative;
+        margin-top:36px;
+
+        .polygon {
+            //width:70%;
+            width: clamp(160px, 72%, 280px);
+            position: relative;
+        }
+
+        .photo {
+            //width:56.5%;
+            width: clamp(130px, 57%, 226px);
+            position: absolute;
+            top:15%;
+            left:50%;
+            transform: translateX(-95px);
+            margin:0 auto;
+            display:block;
+        }
+    }
+
+    .description-container {
+        order:1;
+
+        h2 {
+            margin-left:32px;
+        }
+
+        p {
+            margin: 36px 32px 0 32px;
+            max-width:345px;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+#microphone {
+    margin-top:80px;
+    width:100%;
+    position: relative;
+
+    .description-container {
+
+        h2 {
+            margin-left:32px;
+        }
+
+        p {
+            margin: 36px 32px 0px 32px;
+            max-width:370px;
+        }
+
+    }
+
+    .image-container {
+        position: relative;
+
+        .polygon {
+            //width:280px;
+            width: clamp(160px, 72vw, 300px);
+            margin: 60px 0 0 auto;
+            z-index:-1;
+            position: relative;
+            display: block;
+        }
+
+        .photo {
+            //width:125px;
+            width: clamp(90px, 32vw, 130px);
+            position: absolute;
+            top:-20px;
+            left:50%;
+            transform: translateX(-50%);
+        }
+    }
+
+}

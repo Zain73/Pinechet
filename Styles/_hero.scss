@@ -1,0 +1,46 @@
+#hero {
+    margin: 50px 0 0 32px;
+
+    .container {
+
+        h1 {
+            font-size: clamp(2.125rem, calc(2.125rem + ((1vw - 0.48rem) * 6.0185)), 3.75rem) !important;
+            animation: opacityAnim 1.5s linear 0.2s 1 forwards;
+            opacity: 0;
+        }
+    
+        p {
+            font-size: clamp(1rem, calc(1rem + ((1vw - 0.48rem) * 0.8929)), 1.125rem);
+            margin-top: 36px;
+            margin-right: 32px;
+            //width:320px;
+            font-weight:normal;
+            animation: opacityAnim 1.5s linear 0.2s 1 forwards;
+            opacity: 0;
+        }
+    
+        button {
+            background-color:#37A5E3;
+            padding: 0.6em 1.2em;
+            margin-top: 36px;
+            border-radius: 3px;
+            font-size: clamp(14px, calc(0.875rem + ((1vw - 7.68px) * 0.8929)), 16px);
+            font-weight:500;
+            display:flex;
+            align-items:center;
+            cursor:pointer;
+    
+            img {
+                display:inline-block;
+                width:12px;
+                margin-left:18px;
+                margin-top:0.5px;
+            }
+        }
+    }
+
+    > img {
+        display:none;
+    }
+
+}

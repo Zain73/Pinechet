@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pinechet</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta name="description" content="Pinechet is the pinnacle of precision. We manufacture watches, cameras, microphones and much more.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Styles/styling.css">
+    </head>
+    <body>
+        <div id="page-wrapper">
+         <header id="header">
+             <a class="logo-anchor" href="#">
+                 <img src="SVG's/logo.svg">
+                </a>
+             <div onclick="toggleNav()" class="hamb-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+             </div>   
+             <nav>
+                 <div class="under-slider"></div>
+                 <ul>
+                     <li id="1"><a href="#">Home</a></li>
+                     <li id="2"><a href="#camera">Specials</a></li>
+                     <li id="3"><a href="#about">About Us</a></li>
+                     <li id="4"><a href="#contact">Contact</a></li>
+                 </ul>
+             </nav>
+         </header>
+         <main>
+          <section id="hero">
+            <div class="container">
+               <h1 class="heading">The <span>Pinnacle</span><br> of Precision</h1>
+               <p>We enlighten our customers to the unexplored world of tech and brand new gadgets.</p>
+               <a href="#camera"><button>Our Products 
+                 <img src="SVG's/scrollDownIcon.svg">                   
+                 </button>
+               </a>
+            </div>
+            <img src="Images/watch.png">
+          </section>
+          <section id="camera">
+            <div class="image-container">
+               <img src="SVG's/cameraPolygon.svg" class="polygon">  
+               <img data-scroll class="photo" src="Images/camera.png">
+            </div>
+            <div class="description-container">
+               <h2 data-scroll class="heading"><span>Multi </span>Purpose<br> Camera</h2>
+               <p data-scroll>Our state-of-the-art multi-purpose camera can be used to make 4K photos and videos with outstanding auto-focus and back-focus.</p>
+            </div>
+          </section>
+          <section id="microphone">
+             <div class="description-container">
+                <h2 data-scroll class="heading">Audio <span>Strict<br> </span>Microphone</h2>
+                <p data-scroll >The attribute of audio strickness is what makes this microphone distinguishable from the crowd. After all, the voice of our customers refuels us to do more!</p>
+             </div>
+             <div class="image-container">
+                <img src="SVG's/MicPolygon.svg" class="polygon">                     
+                <img data-scroll class="photo" src="Images/microphone.png">
+             </div>
+          </section>
+          <section id="about">
+            <h2 data-scroll class="heading"><span>About </span>Us</h2>
+            <p data-scroll>Pinechet is a word class tech company renowned for manufacturing cameras, microphones, keyboards, monitors and many other electronics. Our vision is to provide our customers up-to-date gadgets and are dedicated towards manufacturing more high-end products.</p>
+            <img src="SVG's/logoCircle.svg" class="polygon">               
+          </section>
+         </main>
+         <footer id="contact">
+             <img src="SVG's/Contact.svg">                
+             <div class="information-container">
+                <address>
+                    <h2 data-scroll class="heading">Get In <span>Touch</span></h2>
+                    <p data-scroll><span>Email: </span>info@pinechet.com</p>
+                    <p data-scroll><span>Phone: </span>111 222 333 456</p>
+                </address>
+                <div class="social-icons">
+                   <img src="Images/facebookLogo.png">
+                   <img src="Images/linkedinLogo.png">
+                   <img src="Images/instaLogo.png">
+                </div> 
+             </div>
+         </footer>
+        </div>
+        <script src="JavaScript/scroll.js"></script>
+        <script>ScrollOut({
+           once:true,
+           threshold:0.4
+        });</script>
+        <script src="JavaScript/app.js"></script>              
+    </body>
+</html>
